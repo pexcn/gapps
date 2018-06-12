@@ -1,7 +1,6 @@
 #!/bin/bash -e
 
 # create folder if not exists.
-# $1: folder name
 function create_folder() {
   if [ ! -d "$1" ]; then
     mkdir "$1"
@@ -9,16 +8,12 @@ function create_folder() {
 }
 
 # merge files into 'dist' folder.
-# $1: target folder 1
-# $2: target folder 2
 function merge_files() {
   create_folder "dist"
-  cp -r "$1"/* "$2"/* "dist"
+  cp -r $@ "dist"
 }
 
 # packing zip to 'release' folder and clean up 'dist' folder.
-# $1: dist folder
-# $2: dist file name
 function packing_zip() {
   create_folder "release"
   cd "dist"
@@ -27,6 +22,6 @@ function packing_zip() {
   rm -r "dist"
 }
 
-# API27, ARMv7a, 480DPI
-merge_files "src/common/" "src/api-27_armv7a_480dpi/"
-packing_zip "gapps_api-27_armv7a_480dpi.zip"
+# API-27, ARMv7a, 480DPI
+merge_files "src/commons/*" "src/apps/api-27/commons/*" "src/apps/api-27/arm-v7a/480dpi/*" "src/frameworks/api-27/*"
+packing_zip "gapps_api27_armv7a_480dpi.zip"
