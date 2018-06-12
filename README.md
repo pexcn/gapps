@@ -7,7 +7,7 @@ All original files from [OpenGApps](https://github.com/opengapps) and [APKMirror
 
 ## Release
 
-In `[`gh-pages`](https://github.com/pexcn/gapps/tree/gh-pages)` branch.
+In [`gh-pages`](https://github.com/pexcn/gapps/tree/gh-pages) branch.
 
 ## License
 
