@@ -1,4 +1,4 @@
-# OpenGApps minimal
+# OpenGApps Minimal
 
 [![Build Status](https://travis-ci.org/pexcn/gapps.svg?branch=master)](https://travis-ci.org/pexcn/gapps)
 
