@@ -11,6 +11,10 @@ All original files from [OpenGApps](https://github.com/opengapps) and [APKMirror
 
 In [`gh-pages`](https://github.com/pexcn/gapps/tree/gh-pages) branch.
 
+## TODOs
+
+- Separate CPU ARCH, Screen DPI and API Level modules.
+
 ## License
 
 ```
