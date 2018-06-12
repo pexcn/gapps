@@ -5,15 +5,9 @@
 The real minimal version of [OpenGApps](https://opengapps.org).  
 All original files from [OpenGApps](https://github.com/opengapps) and [APKMirror](https://www.apkmirror.com).
 
-**NOTICE: This version only support for Android 8.1**
-
 ## Release
 
 In [`gh-pages`](https://github.com/pexcn/gapps/tree/gh-pages) branch.
-
-## TODOs
-
-- Separate CPU ARCH, Screen DPI and API Level modules.
 
 ## License
 
