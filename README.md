@@ -7,7 +7,19 @@ All original files from [OpenGApps](https://github.com/opengapps) and [APKMirror
 
 ## Release
 
-In [`gh-pages`](https://github.com/pexcn/gapps/tree/gh-pages) branch.
+1. In [`gh-pages`](https://github.com/pexcn/gapps/tree/gh-pages) branch.
+2. https://pexcn.me/gapps/ + `<file name in gh-pages branch>`.
+
+## Reference
+
+- OpenGApps GitHub
+  - https://github.com/opengapps/all
+  - https://github.com/opengapps/arm
+  - https://github.com/opengapps/arm64
+
+- APKMirror
+  - [Google Play Services](https://www.apkmirror.com/apk/google-inc/google-play-services/)
+  - [Google Play Store](https://www.apkmirror.com/apk/google-inc/google-play-store/)
 
 ## License
 
