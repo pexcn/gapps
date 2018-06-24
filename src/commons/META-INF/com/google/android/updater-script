@@ -1,20 +1,12 @@
-ui_print("Unmounting /system ...");
-run_program("/sbin/busybox", "umount", "/system");
-show_progress(1, 15);
-run_program("/sbin/sleep", "1");
+ui_print("Installing GApps...");
+ifelse(is_mounted("/system"), unmount("/system"));
 
-ui_print("Mounting /system ...");
-run_program("/sbin/busybox", "mount", "/system");
-show_progress(3, 15);
-run_program("/sbin/sleep", "1");
+package_extract_file("mount-system.sh", "/tmp/mount-system.sh");
+set_metadata("/tmp/mount-system.sh", "uid", 0, "gid", 0, "mode", 0755);
+run_program("/tmp/mount-system.sh") == 0 || abort("Could not mount /system");
 
-ui_print("Installing...");
 package_extract_dir("system", "/system");
-show_progress(10, 15);
-run_program("/sbin/sleep", "1");
 
-ui_print("Unmounting /system ...");
-run_program("/sbin/busybox", "umount", "/system");
-show_progress(12, 15);
-show_progress(15, 15);
+unmount("/system");
 ui_print("Done!");
+set_progress(1.000000);
