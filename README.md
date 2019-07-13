@@ -5,7 +5,14 @@
 The real minimal version of [OpenGApps](https://opengapps.org).  
 All original files from [OpenGApps](https://github.com/opengapps) and [APKMirror](https://www.apkmirror.com).  
 
-## Release
+## Supports
+
+Now supports the Android devices with following specifications:
+
+- [x] API Level 25, ARMv7a, 480 DPI
+- [x] API Level 27, ARMv7a, 480 DPI
+
+## Releases
 
 1. In [`gh-pages`](https://github.com/pexcn/gapps/tree/gh-pages) branch.
 2. https://pexcn.me/gapps/ + `<file name in gh-pages branch>`.
