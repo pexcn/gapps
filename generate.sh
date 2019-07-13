@@ -22,10 +22,6 @@ function packing_zip() {
   rm -r "dist"
 }
 
-# API-23, ARMv7a, 480DPI
-merge_files "src/commons/*" "src/apps/commons/*" "src/apps/api-23/commons/*" "src/apps/api-23/arm-v7a/480dpi/*" "src/frameworks/api-23/*"
-packing_zip "gapps_api23_armv7a_480dpi.zip"
-
 # API-25, ARMv7a, 480DPI
 merge_files "src/commons/*" "src/apps/commons/*" "src/apps/api-25/commons/*" "src/apps/api-25/arm-v7a/480dpi/*" "src/frameworks/api-25/*"
 packing_zip "gapps_api25_armv7a_480dpi.zip"
