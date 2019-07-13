@@ -1,4 +1,4 @@
-dist: trusty
+dist: xenial
 language: bash
 
 branches:
@@ -14,10 +14,8 @@ addons:
 
 env:
   global:
+    - TZ: "Asia/Shanghai"
     - secure: "Ju2wohO33hCp/ZjKJgKNQoOPYqB3xARX2/GzhHubnD+eMxR0/hoCnJsjV+FeGr4tgXG2qWx1kt0lddZTWmo4hHIv48uC/jPV56JhsJImPs0aXQO7L/fyv9wUr6zh0+RN2pmRAgt0LBjWk87OrzeoYH6jbJNxs+Vk7VjGWzpLYu4Ca70k1W0gTUKY/mpfq9OXsUNyYGCkfeFGPH+NG7lgvNUV37nhdrV8jLMHHqhvqTNNvSRMeBchTM6hLTAMCWmUIiV46U3SVHSHakmPa/WqlZNHIe0oaBSx71rucldAYcogauCVl7Oa1RUI/U67wnMo3Uh0xT/NDV7jEsI4ZFFPf/yrIKmZjp2dzsYP6mqPHO5x8E1onig5I4TFLRVnVZzaWx3nJjZokt2izNP+o2slH8qzzLUes8/R3giEZZ6h4nsNc5hD/bkQZ2pT+Dm9CACvMwF8anMByQ/ViQQwbWoD8kB858utEn9Zy/mGEwsMXJcI6MjyQ23ssy5LMDrQkd3cTX6t1yE/FaYbqZnzKnJWGjzUziWgkB7zrCUR215ldTnC5ZAAogZI7HLM6tN7PzY9arN80h6hPcmN1PmKswghDdHQQTtKhFEmw6XE5PZqho6MW3WpjKUulZhLs9oKgt4GvYzWOZrQm21Pdy39PtyA7hgGIgh26ZCv8oDctLF7yzg="
-
-before_script:
-  - export TZ=Asia/Shanghai
 
 script:
   - bash generate.sh
@@ -29,7 +27,7 @@ deploy:
   keep-history: true
   skip-cleanup: true
   github-token: ${GITHUB_TOKEN}
-  name: Travis CI
-  email: travis.ci.build@gmail.com
+  #name: Travis CI
+  #email: travis.ci.build@gmail.com
   on:
     branch: master
