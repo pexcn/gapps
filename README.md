@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/pexcn/gapps.svg?branch=master)](https://travis-ci.org/pexcn/gapps)
 
 The real minimal version of [OpenGApps](https://opengapps.org).  
-All original files from [OpenGApps](https://github.com/opengapps) and [APKMirror](https://www.apkmirror.com).
+All original files from [OpenGApps](https://github.com/opengapps) and [APKMirror](https://www.apkmirror.com).  
 
 ## Release
 
@@ -12,10 +12,9 @@ All original files from [OpenGApps](https://github.com/opengapps) and [APKMirror
 
 ## Reference
 
-- OpenGApps GitHub
-  - https://github.com/opengapps/all
-  - https://github.com/opengapps/arm
-  - https://github.com/opengapps/arm64
+- OpenGApps sources
+  - https://github.com/opengapps/opengapps
+  - https://gitlab.opengapps.org/opengapps
 
 - APKMirror
   - [Google Play Services](https://www.apkmirror.com/apk/google-inc/google-play-services/)
@@ -24,7 +23,7 @@ All original files from [OpenGApps](https://github.com/opengapps) and [APKMirror
 ## License
 
 ```
-Copyright (C) 2018, pexcn <i@pexcn.me>
+Copyright (C) 2018 - 2019, pexcn <i@pexcn.me>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
