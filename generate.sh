@@ -23,9 +23,9 @@ function packing_zip() {
 }
 
 # API-25, ARMv7a, 480DPI
-merge_files "src/commons/*" "src/apps/commons/*" "src/apps/api-25/commons/*" "src/apps/api-25/arm-v7a/480dpi/*" "src/frameworks/api-25/*"
+merge_files "src/commons/*" "src/apps/commons/*" "src/apps/api-25/commons/*" "src/apps/api-25/arm-v7a/480dpi/*" "src/frameworks/api-25/*" "src/etcs/api-25/*"
 packing_zip "gapps_api25_armv7a_480dpi.zip"
 
 # API-27, ARMv7a, 480DPI
-merge_files "src/commons/*" "src/apps/commons/*" "src/apps/api-27/commons/*" "src/apps/api-27/arm-v7a/480dpi/*" "src/frameworks/api-27/*"
+merge_files "src/commons/*" "src/apps/commons/*" "src/apps/api-27/commons/*" "src/apps/api-27/arm-v7a/480dpi/*" "src/frameworks/api-27/*" "src/etcs/api-27/*"
 packing_zip "gapps_api27_armv7a_480dpi.zip"
