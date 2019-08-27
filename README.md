@@ -11,6 +11,7 @@ Now supports the Android devices with following specifications:
 
 - [x] API Level 25, ARMv7a, 480 DPI
 - [x] API Level 27, ARMv7a, 480 DPI
+- [x] API Level 28, ARMv7a, 480 DPI
 
 ## Releases
 
