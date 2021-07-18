@@ -5,12 +5,10 @@ The minimal version of GApps, only support arm64 devices.
 ## Credits
 
 - [@opengapps/opengapps](https://github.com/opengapps/opengapps)
-- [@opengapps/all](https://gitlab.opengapps.org/opengapps/all)
-- [@opengapps/arm64](https://github.com/opengapps/arm64)
-- https://gitlab.opengapps.org/opengapps/all/-/tree/master/priv-app/com.google.android.gsf
-- https://gitlab.opengapps.org/opengapps/all/-/tree/master/priv-app/com.google.android.gsf.login
-- https://gitlab.opengapps.org/opengapps/arm64/-/tree/master/priv-app/com.google.android.gms
-- https://gitlab.opengapps.org/opengapps/arm64/-/tree/master/priv-app/com.android.vending
+- [@opengapps/all/com.google.android.gsf](https://gitlab.opengapps.org/opengapps/all/-/tree/master/priv-app/com.google.android.gsf)
+- [@opengapps/all/com.google.android.gsf.login](https://gitlab.opengapps.org/opengapps/all/-/tree/master/priv-app/com.google.android.gsf.login)
+- [@opengapps/arm64/com.google.android.gms](https://gitlab.opengapps.org/opengapps/arm64/-/tree/master/priv-app/com.google.android.gms)
+- [@opengapps/arm64/com.android.vending](https://gitlab.opengapps.org/opengapps/arm64/-/tree/master/priv-app/com.android.vending)
 - [FlameGApps](https://flamegapps.github.io)
 - [Google Play Services](https://www.apkmirror.com/apk/google-inc/google-play-services/)
 - [Google Play Store](https://www.apkmirror.com/apk/google-inc/google-play-store/)

@@ -22,6 +22,6 @@ function packing_zip() {
   rm -r "dist"
 }
 
-# API-30
+# android 11
 merge_files "src/commons/api-30/*" "src/apps/api-30/*" "src/frameworks/api-30/*"
-packing_zip "gapps-api30.zip"
+packing_zip "gapps-android-11.zip"
