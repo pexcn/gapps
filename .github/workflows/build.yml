@@ -1,0 +1,34 @@
+name: Build
+
+on:
+  push:
+    branches: master
+
+env:
+  TZ: Asia/Taipei
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+      - name: Prepare
+        run: sudo apt-get install git git-lfs zip -y --no-install-recommends
+      - name: Generate
+        run: ./generate.sh
+      - name: Deploy
+        run: |
+          # update gh-pages
+          git clone https://github.com/${{ github.repository }}.git -b gh-pages --depth 1 --single-branch gh-pages
+          rm -rf gh-pages/*
+          cp -rf release/* gh-pages
+          # push to gh-pages
+          cd gh-pages
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .
+          git commit -m "$(date +%Y%m%d)" || true
+          git push https://${{ github.repository_owner }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages
