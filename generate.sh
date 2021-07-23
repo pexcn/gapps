@@ -27,7 +27,7 @@ function packing_zip() {
 #
 # gapps
 merge_files "src/commons/api-30/*" "src/apps/api-30/*" "src/frameworks/api-30/*"
-packing_zip "gapps_android-11.zip"
+packing_zip "gapps-core_android-11.zip"
 # gapps-extra
 merge_files "src/commons/api-30/*" "src/extras/api-30/*"
 packing_zip "gapps-extra_android-11.zip"
