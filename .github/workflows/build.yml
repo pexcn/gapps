@@ -14,6 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
+          submodules: true
           lfs: true
       - name: Prepare
         run: sudo apt-get install git git-lfs zip -y --no-install-recommends
